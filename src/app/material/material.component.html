@@ -1,0 +1,28 @@
+<mat-sidenav-container>
+
+  <mat-sidenav role="navigation" [opened]="openSidenav" #sidenav>
+    Inside sidenav
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">Seematics
+      <div>
+        <button mat-icon-button  (click)="sidenav.toggle()">
+          <mat-icon>menu</mat-icon>
+          Toggle Sidenav
+        </button>
+      </div>
+       <div class="logo"></div>
+       <
+      <div fxFlex fxLayout fxLayoutAlign="flex-end">
+        <ul>
+            <a routerLink="/">Link1</a>
+            <a routerLink="/">Link2</a>
+            <a routerLink="/">Link3</a>
+        </ul>
+        
+      </div>
+    </mat-toolbar>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>
